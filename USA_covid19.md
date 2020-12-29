@@ -21,8 +21,9 @@ library(dygraphs)
 
 search()
 ```
+
 ## 주(state)별 확진자 data frame 로드하기  
-###github에서 csv파일 불러오는 방법
+* github에서 csv파일 불러오는 방법
 
 ![screenshot](https://user-images.githubusercontent.com/76435473/103294010-5503cf80-4a34-11eb-9fdf-1696cf2cb42b.png)
 
