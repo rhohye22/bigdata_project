@@ -21,7 +21,7 @@ library(dygraphs)
 
 ```
 
-```{r}
+```{r eval=TRUE}
 search()
 ```
 
