@@ -21,9 +21,24 @@ library(dygraphs)
 
 search()
 ```
-
 ## 주(state)별 확진자 data frame 로드하기  
 * github에서 csv파일 불러오는 방법
 
 ![screenshot](https://github.com/rhohye22/study_R/raw/main/image/csv_down.png)
+
+* cvs파일 데이터가 출력되는 페이지의 링크를 복사
+
+
+`us_state_url <- 'https://github.com/nytimes/covid-19-data/raw/master/us-states.csv'`
+ 
+
+* 'us_state_url'이란 객체에 링크를 삽입
+
+
+`us_covid <- read.cvs(file = us_state_url)`
+
+### us_covid 라는 이름을 가진 확진자 현황 데이터 프레임 생성.
+
+
+
 
