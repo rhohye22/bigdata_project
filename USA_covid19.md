@@ -19,8 +19,13 @@ library(ggiraphExtra)
 library(xts)
 library(dygraphs)
 
+```
+
+```{r}
 search()
 ```
+
+
 ## 주(state)별 확진자 data frame 로드하기  
 * github에서 csv파일 불러오는 방법
 
