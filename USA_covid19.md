@@ -18,7 +18,7 @@ library(ggiraphExtra)
 #시계열 그래프를 위한 패키지
 library(xts)
 library(dygraphs)
-
+library(knitr)
 ```
 
 ```{r message=TRUE}
