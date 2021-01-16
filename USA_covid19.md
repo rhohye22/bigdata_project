@@ -1,5 +1,6 @@
+
 ---
-title: "USA covid-19 12/29"
+title: "USA covid-19 1/15"
 output:
   html_document: default
   pdf_document: default
@@ -39,15 +40,19 @@ library(knitr)
 
 ### us_covid 라는 이름을 가진 확진자 현황 데이터 프레임 생성.
 
-```{r message=TRUE}
+```{r message=TRUE, paged.print=TRUE}
 tail(us_covid)
 ```
 * 데이터프레임의 변수와 일자를 확인
 
-```{r}
+```{r message=TRUE}
 str(us_covid)
 ```
 * 데이터 타입을 확인
+
+
+
+
 
 
 
