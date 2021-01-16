@@ -21,11 +21,6 @@ library(dygraphs)
 library(knitr)
 ```
 
-```{r message=TRUE}
-search()
-```
-
-
 ## 주(state)별 확진자 data frame 로드하기  
 * github에서 csv파일 불러오는 방법
 
@@ -43,6 +38,18 @@ search()
 `us_covid <- read.cvs(file = us_state_url)`
 
 ### us_covid 라는 이름을 가진 확진자 현황 데이터 프레임 생성.
+
+```{r}
+tail(us_covid)
+```
+* 데이터프레임의 변수와 일자를 확인
+
+```{r}
+str(us_covid)
+```
+* 데이터 타입을 확인
+
+
 
 
 
