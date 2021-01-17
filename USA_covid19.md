@@ -1,9 +1,8 @@
-
 ---
 title: "USA covid-19 1/15"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 # 미국의 코로나19 발생 현황 시각화  
@@ -109,13 +108,13 @@ ___
 
 ## 지도 데이터프레임(state)와 주별 확진자 데이터 프레임(us_covid_0115)을 조인
 
-```{r}
+```{r message=TRUE}
 str(us_covid_0115)
 ```
 * **state** 라는 변수명으로 미국의 주를 표기.
 * 변수의 데이터들이 **대문자**로 시작하는 것을 확인.
 
-```{r}
+```{r message=TRUE}
 str(state)
 ```
 * **region** 라는 변수 명으로 미국의 주를 표기.
@@ -130,7 +129,7 @@ us_covid_0115$state <- tolower(us_covid_0115$state)
 
 * join하여 us_covid_map 데이터 프레임을 생성 
 
-```{r}
+```{r message=TRUE}
 us_covid_map <- left_join(state, us_covid_0115, by = c('region' = 'state'))
 head(us_covid_map)
 ```
